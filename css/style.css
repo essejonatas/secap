@@ -1,0 +1,105 @@
+/* Geral */
+body {
+	background: #f5f5f5;
+	font-family: Arial;
+	font-size: 17px;
+	color: #333;
+	line-height: 22px;
+}
+p {
+	padding-top: 15px;
+}
+
+/* header */
+.logo-site, .apresentaca, .projeto-item-titulo {
+	text-align: center;
+}
+
+/* Apresentacao */
+.apresentacao {
+	text-align: center;
+	padding: 40px 0;
+}
+.apresentacao-titulo {
+	font-size: 20px;
+	font-weight: bold;
+}
+
+
+/* Slider */
+.slider-item {
+	width: 1200px;
+	margin: -50px auto;
+	z-index: -1;
+}
+
+/* Projetos */
+.projetos {
+	padding: 40px;
+	background: #72b4e8;
+	color: #fff;
+}
+.projetos-titulo {
+	text-align: center;
+	padding: 0 0 40px 0;
+	font-weight: bold;
+}
+
+/* Sobre */
+.sobre-item-titulo {
+    margin: 25px 0 0 0;
+
+}
+
+/* Contato Ciade */
+.contato-ciade img {
+    float: left;
+    display: inline;
+}
+
+.ciade-descricao {
+    font-size: 14px;
+    color: #777;
+    line-height: 18px;
+    float: left;
+}
+
+.contato-ciade {
+    display: inline;
+    float: left;
+}
+
+/* Contato Formulário*/
+.contato-fomulario {
+	background: #fff;
+	padding: 20px;
+	margin-bottom: -50px;
+	border: 1px solid #ccc
+}
+.contato-fomulario-titulo {
+	background: #72b4e8;
+	color: #fff;
+}
+.contato-fomulario label {
+	display: block;
+	margin: 12px 0 3px 0 
+}
+.contato-formulario-input {
+	padding: 10px;
+	border: 1px solid #ccc;
+	width: 100%
+}
+.contato-formulario-textarea {
+	padding: 10px;
+	border: 1px solid #ccc;
+	width: 100%;
+	min-height: 100px;
+	font-family: arial;
+	font-size: 14px
+}
+
+/* Footer */
+footer {
+	background: #acc53a;
+	height: 100px;	
+}
