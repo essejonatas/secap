@@ -8,7 +8,7 @@
 </head>
 <body>
 	<div class="logo-site">
-		<img src="img/logo-secap.jpg" alt="logo secap">
+		<img src="img/slider-bg-top.png" alt="logo secap">
 	</div>
 
 	<div class="slider">
@@ -98,7 +98,7 @@
 						<p class="ciade-descricao">O <strong>CIADE<strong>, Centro integrado de assistência social da assembléia de Deus é uma instituição social Com Sede própria, recém-construída e inaugurada em julho de 2011, com endereço localizado na Rua Abreulândia nº 77 com a Rua Esplendor, no bairro Planalto, onde atualmente estão abrigadas 22 senhoras. Estas instalações ocupam um terreno com 2.000m2, e uma área construída de 1.133,90 m2. O quadro funcional de 34 pessoas é composto por profissionais nas áreas de:</p>
 				</div>
 				<div class="col-1-1">
-					<h2>Parceiros</h2>
+					<h2 class="parceiros-titulo">Parceiros</h2>
 					<ul class="parceiros">
 						<div class="col-1-5">
 							<li class="parceiro-logo" id="sabor_fino"></li>
@@ -139,8 +139,9 @@
 	<footer>
 		<div class="grid">
 			<ul class="links">
-				<!-- <li class="links-item"><a href="http://facebook.com/redesecap">facebook</a></li>
-				<li class="links-item"><a href="http://facebook.com/redesecap">twitter</a></li> -->
+				<li class="links-item">
+					<img src="img/facebook.svg" alt="facebook.com"><span>/redesecap</span>
+				</li>
 			</ul>
 		</div>
 	</footer>	
