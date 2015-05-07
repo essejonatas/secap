@@ -3,7 +3,7 @@ body {
 	background: #f5f5f5;
 	font-family: Arial;
 	font-size: 17px;
-	color: #333;
+	color: #555;
 	line-height: 22px;
 }
 p {
@@ -13,6 +13,7 @@ p {
 /* header */
 .logo-site, .apresentaca, .projeto-item-titulo {
 	text-align: center;
+	font-weight: bold;
 }
 
 /* Apresentacao */
@@ -27,58 +28,177 @@ p {
 
 
 /* Slider */
-.slider-item {
-	width: 1200px;
-	margin: -50px auto;
-	z-index: -1;
+.slider {
+	position: relative;
+	background: url('../img/slider.jpg');
+	background-size: cover;
+	width: 100%;
+	height: auto;
+	color: #f5f5f5;
+	padding: 40px;
+}
+.slider-titulo {
+	line-height: 34px;
+	padding-top: 200px;
+	font-weight: bold;
+	text-transform: capitalize;
+	font-size: 36px;
+	text-shadow: 1px 1px 1px #000;
+}
+.slider-descricao {
+	padding: 40px 0 100px 0;
+	font-size: 24px;
+	max-width: 600px;	
+	color: #333;
+	background: rgba(255, 255, 255, 0.62);
+	padding: 15px 25px;
+	margin: 40px 0;
+	border-left: 4px solid #fff;
+	text-shadow: 1px 1px 1px #ddd;
 }
 
 /* Projetos */
+.projects-top {
+	height: 100px;
+	background: url('../img/projects-bg-top.jpg');
+	background-repeat: no-repeat;
+	background-size: 1500px;
+}
+.projects-bottom {
+	height: 150px;
+	background: url('../img/projects-bg-bottom.jpg');
+	background-repeat: no-repeat;
+	background-size: 1500px;
+}
+
+.projects-top {}
 .projetos {
-	padding: 40px;
-	background: #72b4e8;
+	padding-bottom: 40px;
+	background: #41B5EB;
 	color: #fff;
 }
+.projeto-item-logo {
+	width: 150px;
+	height: 150px;
+	margin: 20px auto;
+	border-radius: 150px;
+}
+#logo-crer {
+	background: url('../img/logos-projects.jpg');
+	background-repeat: no-repeat;
+	background-position: 0, 0;
+}
+#logo-secap {
+	background: url('../img/logos-projects.jpg');
+	background-repeat: no-repeat;
+	background-position: -150px, 0;
+}
+#logo-secap_mais {
+	background: url('../img/logos-projects.jpg');
+	background-repeat: no-repeat;
+	background-position: -300px, 0;
+}
+#logo-radio {
+	background: url('../img/logos-projects.jpg');
+	background-repeat: no-repeat;
+	background-position: -450px, 0;
+}
+#logo-geracao_saber {
+	background: url('../img/logos-projects.jpg');
+	background-repeat: no-repeat;
+	background-position: -600px, 0;
+}	
 .projetos-titulo {
 	text-align: center;
 	padding: 0 0 40px 0;
 	font-weight: bold;
+	font-size: 20px;
 }
 
 /* Sobre */
+.sobre {
+	padding: 40px 0;
+}
 .sobre-item-titulo {
-    margin: 25px 0 0 0;
-
+  margin: 25px 0 0 0;
+  font-weight: bold;
+}
+.sobre-imagem {
+	padding: 20px;
+}
+.sobre-imagem img {
+	width: 100%
+}
+.parceiros {
+	margin-left: -40px 
+}
+.parceiro-logo {
+	width: 130px;
+	height: 130px;
+	margin: 20px;
+}
+#sabor_fino {
+	background: url('../img/logos-partners.jpg');
+	background-repeat: no-repeat;
+	background-position: 0, 0;
+}
+#camara_cascudo {
+	background: url('../img/logos-partners.jpg');
+	background-repeat: no-repeat;
+	background-position: -130px, 0;
+}
+#filmfactory {
+	background: url('../img/logos-partners.jpg');
+	background-repeat: no-repeat;
+	background-position: -260px, 0;
+}
+#coletivo {
+	background: url('../img/logos-partners.jpg');
+	background-repeat: no-repeat;
+	background-position: -390px, 0;
+}
+#varlik {
+	background: url('../img/logos-partners.jpg');
+	background-repeat: no-repeat;
+	background-position: -520px, 0;
 }
 
 /* Contato Ciade */
 .contato-ciade img {
-    float: left;
-    display: inline;
+    width: 100%;
 }
 
 .ciade-descricao {
-    font-size: 14px;
-    color: #777;
-    line-height: 18px;
-    float: left;
+  font-size: 14px;
+  color: #777;
+  line-height: 18px;
+  float: left;
+  text-align: justify;
+  padding-right: 10px;
 }
 
 .contato-ciade {
-    display: inline;
-    float: left;
+  padding: 10px 20px 20px 10px;
+  width: 100%;
 }
 
-/* Contato Formulário*/
+/* Contato FormulÃƒÆ’Ã†â€™Ãƒâ€šÃ‚Â¡rio*/
 .contato-fomulario {
 	background: #fff;
-	padding: 20px;
-	margin-bottom: -50px;
+	padding: 0 20px 60px;
+	margin: 0 0 -50px 20px;
 	border: 1px solid #ccc
 }
 .contato-fomulario-titulo {
 	background: #72b4e8;
 	color: #fff;
+	font-size: 18px;
+	padding: 25px;
+	margin-left: 20px;
+}
+.contato-formulario-titulo-destaque {
+	font-weight: bold;
+	text-transform: uppercase;
 }
 .contato-fomulario label {
 	display: block;
@@ -87,7 +207,8 @@ p {
 .contato-formulario-input {
 	padding: 10px;
 	border: 1px solid #ccc;
-	width: 100%
+	width: 100%;
+	border-radius: 2px;
 }
 .contato-formulario-textarea {
 	padding: 10px;
@@ -96,6 +217,15 @@ p {
 	min-height: 100px;
 	font-family: arial;
 	font-size: 14px
+}
+.contato-formulario-submit {
+	border: none;
+	background: #72b4e8;
+	color: #f5f5f5;
+	font-size: 16px;
+	margin-top: 10px;
+	padding: 10px 30px;
+	float: right;
 }
 
 /* Footer */
