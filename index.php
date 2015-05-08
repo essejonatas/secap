@@ -37,23 +37,23 @@
 		<div class="grid">
 			<h2 class="projetos-titulo">NOSSOS PROJETOS</h2>
 			<ul>
-				<li class="projeto-item col-1-5">
+				<li class="projeto-item col-1-5" data-event="crer">
 					<div class="projeto-item-logo" id="logo-crer"></div>
 					<h3 class="projeto-item-titulo">CRER</h3>
 				</li>
-				<li class="projeto-item col-1-5">
+				<li class="projeto-item col-1-5" data-event="secap">
 					<div class="projeto-item-logo" id="logo-secap"></div>
 					<h3 class="projeto-item-titulo">SECAP</h3>
 				</li>
-				<li class="projeto-item col-1-5">
+				<li class="projeto-item col-1-5" data-event="secap-mais">
 					<div class="projeto-item-logo" id="logo-secap_mais"></div>
 					<h3 class="projeto-item-titulo">SECAP+</h3>
 				</li>
-				<li class="projeto-item col-1-5">
+				<li class="projeto-item col-1-5" data-event="secap-radio">
 					<div class="projeto-item-logo" id="logo-radio"></div>
 					<h3 class="projeto-item-titulo">PROGRAMA REDE SECAP</h3>
 				</li>
-				<li class="projeto-item col-1-5">
+				<li class="projeto-item col-1-5" data-event="geracao-saber">
 					<div class="projeto-item-logo" id="logo-geracao_saber"></div>
 					<h3 class="projeto-item-titulo">PROGRAMA GERAÇÃO SABER</h3>
 				</li>
@@ -169,8 +169,11 @@
 		</div>
 	</footer>
 	
-	<div class="popup">
+	<div class="popup closed">
 		<div class="wrap">
+			<div class="close">
+				X
+			</div>
 			<div class="projeto-slider owl-carousel">
 				<div>
 					<img src="http://lorempixel.com/400/400" alt="">

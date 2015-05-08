@@ -3,27 +3,27 @@ $(function() {
     var galerias = {
         "crer": {
             "imagens": ["http://lorempixel.com/400/400", "http://lorempixel.com/400/400", "http://lorempixel.com/400/400"],
-            "conteudo": "conteudo",
+            "conteudo": "Conteudo do Crer",
         },
 
         "secap": {
             "imagens": ["http://lorempixel.com/400/400", "http://lorempixel.com/400/400", "http://lorempixel.com/400/400"],
-            "conteudo": "conteudo",
+            "conteudo": "Conteudo do Secap",
         },
 
         "secap-mais": {
             "imagens": ["http://lorempixel.com/400/400", "http://lorempixel.com/400/400", "http://lorempixel.com/400/400"],
-            "conteudo": "conteudo",
+            "conteudo": "Conteudo do Secap Mais",
         },
 
         "secap-radio": {
             "imagens": ["http://lorempixel.com/400/400", "http://lorempixel.com/400/400", "http://lorempixel.com/400/400"],
-            "conteudo": "conteudo",
+            "conteudo": "Conteudo da Radio",
         },
 
         "geracao-saber": {
             "imagens": ["http://lorempixel.com/400/400", "http://lorempixel.com/400/400", "http://lorempixel.com/400/400"],
-            "conteudo": "conteudo",
+            "conteudo": "Conteudo do Geração Saber",
         },
     }
 
@@ -44,6 +44,11 @@ $(function() {
             img.src = imagem;
             item.appendChild(img);
             slider.appendChild(item);
+        }
+
+
+        if($(".projeto-slider").data('owlCarousel') !== undefined){
+            $(".projeto-slider").data('owlCarousel').destroy();
         }
 
         $(".projeto-slider").owlCarousel({
@@ -73,9 +78,19 @@ $(function() {
         $("body").smoothWheel(0);
     });
 
-    $(document).ready(function() {
-        var galeriaNome = "crer";
 
-        mostraGaleria(galeriaNome);
+    $(document).ready(function() {
+
+        $(".close").click(function() {
+            $(".popup").addClass("closed");
+        });
+
+        $(".projeto-item").click(function() {
+            $(".popup").removeClass("closed");
+            var galeriaNome = $(this).data("event");
+            mostraGaleria(galeriaNome);
+        });
+
+        
     });
 });

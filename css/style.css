@@ -273,30 +273,23 @@ p {
     float: right;
 }
 
-
-.popup{
-	position: fixed;
-	top: 0px;
-	left: 0px;
-	right: 0px;
-	bottom: 0px;
-	z-index: 9999999999999;
-	
-	background-color: rgba(0,0,0,0.7);
+.popup {
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    right: 0px;
+    bottom: 0px;
+    z-index: 9999999999999;
+    background-color: rgba(0, 0, 0, 0.7);
 }
 
-
-.popup .wrap{
-	max-width: 500px;
-	min-width: 280px;
-	
-	margin: 20px auto;
-	padding: 30px;
-
-	background-color: #fff;
+.popup .wrap {
+    max-width: 500px;
+    min-width: 280px;
+    margin: 20px auto;
+    padding: 30px;
+    background-color: #fff;
 }
-
-
 /* Footer */
 
 footer {
@@ -424,8 +417,51 @@ li.social-link {
     margin-right: 30px;
 }
 
-li.social-link img{
-	height: 30px;
-	margin-bottom: -8px;
-	display: inline-block;
+li.social-link img {
+    height: 30px;
+    margin-bottom: -8px;
+    display: inline-block;
+}
+
+.popup.closed{
+    display: none;
+}
+
+.popup{
+    display: block;
+}
+
+
+.popup .wrap {
+    text-align: center;
+}
+
+.popup .wrap .projeto-imagem-item {
+    width: auto;
+    height: 300px;
+}
+
+.popup .wrap .projeto-conteudo {
+    text-align: left;
+}
+
+.popup .wrap .close {
+    text-align: center;
+    
+    width: 30px;
+    height: 30px;
+    line-height: 30px;
+    border-radius: 50%;
+    float: right;
+    margin-top: -26px;
+    margin-right: -26px;
+    color:#f00;
+    font-weight: bold;
+    cursor: pointer;
+    transition: all 300ms ease;
+}
+
+.popup .wrap .close:hover{
+    background: #f00;
+    color: #fff;
 }
