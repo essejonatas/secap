@@ -5,6 +5,11 @@
 	<title>Rede SECAP</title>
 	<link rel="stylesheet" type="text/css" href="css/libs.css">
 	<link rel="stylesheet" type="text/css" href="css/style.css">
+	
+	<link rel="stylesheet" type="text/css" href="js/owlCarousel/owl.carousel.css">	
+
+	<link rel="stylesheet" href="js/owlCarousel/owl.theme.css">
+
 </head>
 <body>
 	<div class="logo-site">
@@ -101,19 +106,29 @@
 					<h2 class="parceiros-titulo">Parceiros</h2>
 					<ul class="parceiros">
 						<div class="col-1-5">
-							<li class="parceiro-logo" id="sabor_fino"></li>
+							<a href="http://saborfino.com.br/" target="_blank">
+								<li class="parceiro-logo" id="sabor_fino"></li>								
+							</a>
 						</div>
 						<div class="col-1-5">
-							<li class="parceiro-logo" id="camara_cascudo"></li>
+							<a href="http://www.livrariacamaracascudo.com/" target="_blank">
+								<li class="parceiro-logo" id="camara_cascudo"></li>
+							</a>
 						</div>	
 						<div class="col-1-5">
-							<li class="parceiro-logo" id="filmfactory"></li>
+							<a href="https://fb.com/filmfactory.br" target="_blank">
+								<li class="parceiro-logo" id="filmfactory"></li>
+							</a>
 						</div>	
 						<div class="col-1-5">
-							<li class="parceiro-logo" id="coletivo"></li>
+							<a href="http://coletivomp.com/" target="_blank">
+								<li class="parceiro-logo" id="coletivo"></li>
+							</a>
 						</div>	
 						<div class="col-1-5">
-							<li class="parceiro-logo" id="varlik"></li>
+							<a href="http://varlik.com.br/" target="_blank">
+								<li class="parceiro-logo" id="varlik"></li>
+							</a>							
 						</div>	
 					</ul>
 				</div>
@@ -139,12 +154,41 @@
 	<footer>
 		<div class="grid">
 			<ul class="links">
-				<li class="links-item">
-					<img src="img/facebook.svg" alt="facebook.com"><span>/redesecap</span>
+				<li class="social-link">
+					<img src="img/facebook.svg" alt="facebook.com"> /redesecap
+				</li>
+
+				<li class="social-link">
+					<img src="img/twitter.svg" alt="twitter.com"> @redesecap
+				</li>
+
+				<li class="social-link">
+					<img src="img/instagram.svg" alt="facebook.com"> @redesecap
 				</li>
 			</ul>
 		</div>
-	</footer>	
+	</footer>
+	
+	<div class="popup">
+		<div class="wrap">
+			<div class="projeto-slider owl-carousel">
+				<div>
+					<img src="http://lorempixel.com/400/400" alt="">
+				</div>
+			</div>
+			<div class="projeto-conteudo">
+				Lorem ipsum dolor sit amet, consectetur adipisicing elit. Assumenda harum molestias sapiente numquam, aspernatur omnis nobis voluptatum animi, quo tenetur dolorem, praesentium. Tempora eius quam rem corrupti, non modi, nulla!
+			</div>
+		</div>
+	</div>
+
+	<script type="text/javascript" src="js/jquery.js"></script>
+
+	<script type="text/javascript" src="js/owlCarousel/owl.carousel.js"></script>
+	
+	<script type="text/javascript" src="js/jquery.smoothwheel.js"></script>
+
 	<script type="text/javascript" src="js/script.js"></script>
+
 </body>
 </html>

@@ -13,17 +13,17 @@ p {
 }
 /* header */
 
-.logo-site img{
-	width: 100%;
-	height: auto;
+.logo-site img {
+    width: 100%;
+    height: auto;
 }
 
-.logo-site{
-	position: absolute;
-	z-index: 99999;
-	left: 0;
-	right: 0;
-	top: -3px;
+.logo-site {
+    position: absolute;
+    z-index: 99999;
+    left: 0;
+    right: 0;
+    top: -3px;
 }
 
 .logo-site,
@@ -53,7 +53,7 @@ p {
     height: auto;
     color: #f5f5f5;
     padding: 40px;
-    margin-top: 80px;
+    margin-top: 60px;
 }
 
 .slider-titulo {
@@ -272,6 +272,31 @@ p {
     padding: 10px 30px;
     float: right;
 }
+
+
+.popup{
+	position: fixed;
+	top: 0px;
+	left: 0px;
+	right: 0px;
+	bottom: 0px;
+	z-index: 9999999999999;
+	
+	background-color: rgba(0,0,0,0.7);
+}
+
+
+.popup .wrap{
+	max-width: 500px;
+	min-width: 280px;
+	
+	margin: 20px auto;
+	padding: 30px;
+
+	background-color: #fff;
+}
+
+
 /* Footer */
 
 footer {
@@ -279,10 +304,9 @@ footer {
     height: 100px;
 }
 
-
-.links .links-item img{
-	width: 40px; 
-	height: 40px; 
+.links .links-item img {
+    width: 40px;
+    height: 40px;
 }
 
 @media only screen and (max-device-width: 480px) {
@@ -374,20 +398,34 @@ footer {
         padding: 50px;
         margin-left: 0;
     }
-    .contato-fomulario{
-    	margin: 0;
-    	padding: 0 20px 120px
+    .contato-fomulario {
+        margin: 0;
+        padding: 0 20px 120px
     }
     .contato-fomulario label {
         margin: 40px 0 3px 0;
         font-size: 40px;
     }
-    .contato-formulario-input, .contato-formulario-textarea {
+    .contato-formulario-input,
+    .contato-formulario-textarea {
         padding: 22px;
         margin-top: 20px;
         font-size: 40px;
     }
-    .contato-formulario-submit{
-    	font-size: 60px;
+    .contato-formulario-submit {
+        font-size: 60px;
     }
+}
+
+li.social-link {
+    height: 100px;
+    line-height: 100px;
+    display: inline-block;
+    margin-right: 30px;
+}
+
+li.social-link img{
+	height: 30px;
+	margin-bottom: -8px;
+	display: inline-block;
 }
