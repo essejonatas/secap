@@ -5,10 +5,15 @@
 	<title>Rede SECAP</title>
 	<link rel="stylesheet" type="text/css" href="css/libs.css">
 	<link rel="stylesheet" type="text/css" href="css/style.css">
+	
+	<link rel="stylesheet" type="text/css" href="js/owlCarousel/owl.carousel.css">	
+
+	<link rel="stylesheet" href="js/owlCarousel/owl.theme.css">
+
 </head>
 <body>
 	<div class="logo-site">
-		<img src="img/logo-secap.jpg" alt="logo secap">
+		<img src="img/slider-bg-top.png" alt="logo secap">
 	</div>
 
 	<div class="slider">
@@ -32,23 +37,23 @@
 		<div class="grid">
 			<h2 class="projetos-titulo">NOSSOS PROJETOS</h2>
 			<ul>
-				<li class="projeto-item col-1-5">
+				<li class="projeto-item col-1-5" data-event="crer">
 					<div class="projeto-item-logo" id="logo-crer"></div>
 					<h3 class="projeto-item-titulo">CRER</h3>
 				</li>
-				<li class="projeto-item col-1-5">
+				<li class="projeto-item col-1-5" data-event="secap">
 					<div class="projeto-item-logo" id="logo-secap"></div>
 					<h3 class="projeto-item-titulo">SECAP</h3>
 				</li>
-				<li class="projeto-item col-1-5">
+				<li class="projeto-item col-1-5" data-event="secap-mais">
 					<div class="projeto-item-logo" id="logo-secap_mais"></div>
 					<h3 class="projeto-item-titulo">SECAP+</h3>
 				</li>
-				<li class="projeto-item col-1-5">
+				<li class="projeto-item col-1-5" data-event="secap-radio">
 					<div class="projeto-item-logo" id="logo-radio"></div>
 					<h3 class="projeto-item-titulo">PROGRAMA REDE SECAP</h3>
 				</li>
-				<li class="projeto-item col-1-5">
+				<li class="projeto-item col-1-5" data-event="geracao-saber">
 					<div class="projeto-item-logo" id="logo-geracao_saber"></div>
 					<h3 class="projeto-item-titulo">PROGRAMA GERAÇÃO SABER</h3>
 				</li>
@@ -98,22 +103,32 @@
 						<p class="ciade-descricao">O <strong>CIADE<strong>, Centro integrado de assistência social da assembléia de Deus é uma instituição social Com Sede própria, recém-construída e inaugurada em julho de 2011, com endereço localizado na Rua Abreulândia nº 77 com a Rua Esplendor, no bairro Planalto, onde atualmente estão abrigadas 22 senhoras. Estas instalações ocupam um terreno com 2.000m2, e uma área construída de 1.133,90 m2. O quadro funcional de 34 pessoas é composto por profissionais nas áreas de:</p>
 				</div>
 				<div class="col-1-1">
-					<h2>Parceiros</h2>
+					<h2 class="parceiros-titulo">Parceiros</h2>
 					<ul class="parceiros">
 						<div class="col-1-5">
-							<li class="parceiro-logo" id="sabor_fino"></li>
+							<a href="http://saborfino.com.br/" target="_blank">
+								<li class="parceiro-logo" id="sabor_fino"></li>								
+							</a>
 						</div>
 						<div class="col-1-5">
-							<li class="parceiro-logo" id="camara_cascudo"></li>
+							<a href="http://www.livrariacamaracascudo.com/" target="_blank">
+								<li class="parceiro-logo" id="camara_cascudo"></li>
+							</a>
 						</div>	
 						<div class="col-1-5">
-							<li class="parceiro-logo" id="filmfactory"></li>
+							<a href="https://fb.com/filmfactory.br" target="_blank">
+								<li class="parceiro-logo" id="filmfactory"></li>
+							</a>
 						</div>	
 						<div class="col-1-5">
-							<li class="parceiro-logo" id="coletivo"></li>
+							<a href="http://coletivomp.com/" target="_blank">
+								<li class="parceiro-logo" id="coletivo"></li>
+							</a>
 						</div>	
 						<div class="col-1-5">
-							<li class="parceiro-logo" id="varlik"></li>
+							<a href="http://varlik.com.br/" target="_blank">
+								<li class="parceiro-logo" id="varlik"></li>
+							</a>							
 						</div>	
 					</ul>
 				</div>
@@ -139,11 +154,44 @@
 	<footer>
 		<div class="grid">
 			<ul class="links">
-				<!-- <li class="links-item"><a href="http://facebook.com/redesecap">facebook</a></li>
-				<li class="links-item"><a href="http://facebook.com/redesecap">twitter</a></li> -->
+				<li class="social-link">
+					<img src="img/facebook.svg" alt="facebook.com"> /redesecap
+				</li>
+
+				<li class="social-link">
+					<img src="img/twitter.svg" alt="twitter.com"> @redesecap
+				</li>
+
+				<li class="social-link">
+					<img src="img/instagram.svg" alt="facebook.com"> @redesecap
+				</li>
 			</ul>
 		</div>
-	</footer>	
+	</footer>
+	
+	<div class="popup closed">
+		<div class="wrap">
+			<div class="close">
+				X
+			</div>
+			<div class="projeto-slider owl-carousel">
+				<div>
+					<img src="http://lorempixel.com/400/400" alt="">
+				</div>
+			</div>
+			<div class="projeto-conteudo">
+				Lorem ipsum dolor sit amet, consectetur adipisicing elit. Assumenda harum molestias sapiente numquam, aspernatur omnis nobis voluptatum animi, quo tenetur dolorem, praesentium. Tempora eius quam rem corrupti, non modi, nulla!
+			</div>
+		</div>
+	</div>
+
+	<script type="text/javascript" src="js/jquery.js"></script>
+
+	<script type="text/javascript" src="js/owlCarousel/owl.carousel.js"></script>
+	
+	<script type="text/javascript" src="js/jquery.smoothwheel.js"></script>
+
 	<script type="text/javascript" src="js/script.js"></script>
+
 </body>
 </html>
